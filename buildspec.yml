@@ -19,7 +19,7 @@ phases:
 #      - unzip -o HelloWorld-1.0.jar
 #      - rm -rf target tst src buildspec.yml pom.xml HelloWorld-1.0.jar
 #      - echo check what is left `ls`
-      - aws cloudformation package --template template.yml --s3-bucket stsai-codestart-codebuild-s3 --output-template template-export.yml
+      - aws cloudformation package --template template.yml --s3-bucket codepipeline-lambda-deploy-pipeline-build-s3 --output-template template-export.yml
       - echo check what is left after package `ls`
       - echo check what is left after package `cat template-export.yml`
 artifacts:

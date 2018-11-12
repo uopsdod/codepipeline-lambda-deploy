@@ -24,7 +24,7 @@ Resources:
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
       Runtime: java8
-      Role: arn:aws:iam::602307824922:role/stsai-codestart-lambda-role
+      Role: arn:aws:iam::602307824922:role/codepipeline-lambda-deploy-lambda-role
 #        Fn::ImportValue:
 #          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
       Events:
@@ -39,7 +39,7 @@ Resources:
     Properties:
       Handler: com.aws.codestar.projecttemplates.handler.HelloWorldHandler
       Runtime: java8
-      Role: arn:aws:iam::602307824922:role/stsai-codestart-lambda-role
+      Role: arn:aws:iam::602307824922:role/codepipeline-lambda-deploy-lambda-role
 #        Fn::ImportValue:
 #          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
       Events:
