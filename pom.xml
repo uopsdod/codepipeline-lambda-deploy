@@ -73,17 +73,7 @@
 
 	<build>
 		<resources>
-			<resource>
-				<targetPath>META-INF/myfile</targetPath>
-				<filtering>false</filtering>
-				<directory>${basedir}/src/main/resources</directory>
-				<includes>
-					<include>somefile.yml</include>
-				</includes>
-<!-- 				<excludes> -->
-<!-- 					<exclude>**/*.properties</exclude> -->
-<!-- 				</excludes> -->
-			</resource>
+<!-- we need to include these yml files in the artifact bundle for CodeBuild and CodePipeline to use -->		
 			<resource>
 				<filtering>false</filtering>
 				<directory>${basedir}/</directory>
