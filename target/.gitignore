@@ -1,5 +1,3 @@
 /classes/
 /test-classes/
-/target/*
-/HelloWorld-1.0.jar
-/original-HelloWorld-1.0.jar
+*/target/**
